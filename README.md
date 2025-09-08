@@ -29,6 +29,7 @@ The system:
 ---
 
 ## Project Structure
+```bash
 ozmap-sync/
 ├── src/
 │ ├── config/ # Environment and general settings
@@ -43,7 +44,7 @@ ozmap-sync/
 ├── .env.example # Example environment configuration
 ├── package.json
 └── README.md
-
+```
 
 ---
 
