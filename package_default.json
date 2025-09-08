@@ -1,0 +1,33 @@
+{
+  "name": "ozmap_sync",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ecopque/ozmap-sync.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ecopque/ozmap-sync/issues"
+  },
+  "homepage": "https://github.com/ecopque/ozmap-sync#readme",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.2",
+    "mongoose": "^8.18.1",
+    "node-cron": "^4.2.1",
+    "winston": "^3.17.0"
+  }
+}
