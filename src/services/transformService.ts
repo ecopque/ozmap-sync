@@ -1,6 +1,5 @@
-/**
-* Conversões simples do formato ISP -> OZmap.
-* Ajuste conforme o formato real esperado pelo SDK.
+/*
+Conversões simples do formato ISP -> OZmap.
 */
 
 
