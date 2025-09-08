@@ -1,7 +1,5 @@
 # OZmap Sync
 
-![Architecture Diagram](./docs/architecture-diagram.png) <!-- Reserved space -->
-
 ## Overview
 
 **OZmap Sync** is a service built with **Node.js + TypeScript** for **data synchronization** between an ISP system (mocked using `json-server`) and an external management system, simulating **OZmap**.
