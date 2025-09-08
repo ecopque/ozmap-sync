@@ -52,13 +52,13 @@ ozmap-sync/
 
 ### **1. Clone the repository**
 ```bash
-git clone https://github.com/your-username/ozmap-sync.git
-cd ozmap-sync
+$ git clone https://github.com/your-username/ozmap-sync.git
+$ cd ozmap-sync
 ```
 
 ### **2. Install dependencies**
 ```bash
-npm install
+$ npm install
 ```
 
 ### **3. Configure environment variables**
@@ -71,7 +71,62 @@ MONGODB_URI=mongodb://localhost:27017/ozmap_sync
 LOG_LEVEL=debug
 ```
 
+### **4. ISP Mock Server**
+```bash
+This project uses json-server to simulate the ISP data source.
+$ npx json-server --watch db.json --port 4000
+```
 
+### **5. Running the Application**
+```bash
+Development mode
+$ npm run dev
 
+. The app will:
+. Connect to MongoDB.
+. Fetch data from json-server.
+. Transform and send data to the target system (mocked OZmap).
+. Store processed records in MongoDB.
+. Generate detailed logs in the console and the logs/ folder.
+```
 
+### **6. Logs & Data Storage**
+```bash
+Logs are stored in:
 
+logs/
+├── combined.log
+├── error.log
+├── exceptions.log
+└── rejections.log
+```
+
+### **7. To check synchronized records in MongoDB**
+```bash
+$ mongosh
+$ use ozmap_sync
+$ db.syncrecords.find().pretty()
+```
+
+### **8. Architecture**
+```bash
+The architecture is designed to be modular and scalable, with clear separation of concerns:
+
++--------------------+
+| json-server (ISP)  |
++--------------------+
+          ↓
+    fetchISPData()
+          ↓
++--------------------+
+| Transform Service  |
++--------------------+
+          ↓
++--------------------+
+| OZmap Client (SDK) |
++--------------------+
+          ↓
++--------------------+
+| MongoDB Storage    |
++--------------------+
+```
