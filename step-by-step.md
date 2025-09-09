@@ -77,12 +77,12 @@
 # 27: Criar arquivo scheduler e confeccionar:
 . vim src/jobs/scheduler.ts
 
-# SE APRESENTADO ALGUM ERRO, MELHOR LIMPAR O CHACHE DO TS-NODE-DEV
+# Lembrei: SE APRESENTADO ALGUM ERRO, MELHOR LIMPAR O CHACHE DO TS-NODE-DEV
 . rm -rf dist
 . rm -rf node_modules/.cache
 
 # 28: Criar e confeccionar src/services/syncService.ts
 . vim src/services/syncService.ts
 
-# 28: Rode o serviço de sincronização novamente
+# 29: Rode o serviço de sincronização novamente
 . npm run dev
