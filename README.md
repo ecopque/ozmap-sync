@@ -128,3 +128,11 @@ The architecture is designed to be modular and scalable, with clear separation o
 | MongoDB Storage    |
 +--------------------+
 ```
+
+---
+
+## About the Author
+    . Developer: Edson Copque
+    . Website: https://linktr.ee/edsoncopque
+    . GitHub: https://github.com/ecopque
+    . Signal Messenger: ecop.01
